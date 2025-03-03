@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joc Endevinar Paraula</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Joc Endevinar Paraula</h1>
+        
+        <div class="form-section">
+            <input type="password" id="inputParaula" placeholder="Introdueix una paraula">
+            <button id="togglePassword">👁️</button>
+            <button id="btnComencar">Començar partida</button>
+        </div>
+
+        <div class="game-section">
+            <p id="paraulaSecreta">_ _ _ _</p>
+            <div id="botonsLletres"></div>
+            <p id="missatge">Intenta encertar la paraula!</p>
+            <button id="btnReiniciar" style="display: none;">Reiniciar</button>
+        </div>
+
+        <div id="punts-container">
+            <p>Punts: <span id="puntsActuals">0</span></p>
+            <p>Intents restants: <span id="intents">10</span></p>
+            <p>Millor puntuació: <span id="millorPunts">0</span></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
